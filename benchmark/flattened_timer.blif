@@ -1,0 +1,790 @@
+# Benchmark "top" written by ABC on Wed Mar 19 09:15:54 2025 
+
+
+.model top 
+
+
+.inputs clk btnc sw 
+
+
+.outputs anode~0 segment~7 segment~6 segment~5 segment~4 segment~3 segment~2 segment~1 segment~0 anode~3 anode~2 anode~1 
+
+
+
+.latch n20 $add~0^lAND~1 re clk 0 
+
+
+.latch n25 $sdff~1^Q~1 re clk 0 
+
+
+.latch n30 $sdff~1^Q~2 re clk 0 
+
+
+.latch n35 $sdff~1^Q~3 re clk 0 
+
+
+.latch n40 $sdff~1^Q~4 re clk 0 
+
+
+.latch n45 $sdff~1^Q~5 re clk 0 
+
+
+.latch n50 $sdff~1^Q~6 re clk 0 
+
+
+.latch n55 $sdff~1^Q~7 re clk 0 
+
+
+.latch n60 $sdff~1^Q~8 re clk 0 
+
+
+.latch n65 $sdff~1^Q~9 re clk 0 
+
+
+.latch n70 $sdff~1^Q~10 re clk 0 
+
+
+.latch n75 $sdff~1^Q~11 re clk 0 
+
+
+.latch n80 $sdff~1^Q~12 re clk 0 
+
+
+.latch n85 $sdff~1^Q~13 re clk 0 
+
+
+.latch n90 $sdff~1^Q~14 re clk 0 
+
+
+.latch n95 $auto$simplemap.cc:240:simplemap_eqne$997[0] re clk 0 
+
+
+.latch n100 $auto$simplemap.cc:240:simplemap_eqne$1278[1] re clk 0 
+
+
+.latch n105 $add~49^lAND~43 re clk 0 
+
+
+.latch n110 $auto$simplemap.cc:240:simplemap_eqne$1568[1] re clk 0 
+
+
+.latch n115 $auto$simplemap.cc:240:simplemap_eqne$1568[2] re clk 0 
+
+
+.latch n120 $sdffe~50^Q~3 re clk 0 
+
+
+.latch n125 $add~44^lAND~35 re clk 0 
+
+
+.latch n130 $auto$simplemap.cc:240:simplemap_eqne$467[1] re clk 0 
+
+
+.latch n135 $auto$simplemap.cc:240:simplemap_eqne$467[2] re clk 0 
+
+
+.latch n140 $sdffe~45^Q~3 re clk 0 
+
+
+.latch n145 $add~59^lAND~59 re clk 0 
+
+
+.latch n150 $auto$simplemap.cc:240:simplemap_eqne$1299[1] re clk 0 
+
+
+.latch n155 $sdffe~60^Q~2 re clk 0 
+
+
+.latch n160 $auto$simplemap.cc:240:simplemap_eqne$1299[3] re clk 0 
+
+
+.latch n165 $add~64^lAND~67 re clk 0 
+
+
+.latch n170 $sdffe~65^Q~1 re clk 0 
+
+
+.latch n175 $sdffe~65^Q~2 re clk 0 
+
+
+.latch n180 $sdffe~65^Q~3 re clk 0 
+
+
+.latch n185 $sdffe~65^Q~4 re clk 0 
+
+
+.latch n190 $sdffe~65^Q~5 re clk 0 
+
+
+.latch n195 $auto$simplemap.cc:240:simplemap_eqne$1406[6] re clk 0 
+
+
+.latch n200 $auto$simplemap.cc:240:simplemap_eqne$1406[7] re clk 0 
+
+
+.latch n205 $auto$simplemap.cc:240:simplemap_eqne$1406[8] re clk 0 
+
+
+.latch n210 $sdffe~65^Q~9 re clk 0 
+
+
+.latch n215 $auto$simplemap.cc:240:simplemap_eqne$1406[10] re clk 0 
+
+
+.latch n220 $auto$simplemap.cc:240:simplemap_eqne$1406[11] re clk 0 
+
+
+.latch n225 $auto$simplemap.cc:240:simplemap_eqne$1406[12] re clk 0 
+
+
+.latch n230 $auto$simplemap.cc:240:simplemap_eqne$1406[13] re clk 0 
+
+
+.latch n235 $sdffe~65^Q~14 re clk 0 
+
+
+.latch n240 $auto$simplemap.cc:240:simplemap_eqne$1406[15] re clk 0 
+
+
+.latch n245 $sdffe~65^Q~16 re clk 0 
+
+
+.latch n250 $sdffe~65^Q~17 re clk 0 
+
+
+.latch n255 $sdffe~65^Q~18 re clk 0 
+
+
+.latch n260 $sdffe~65^Q~19 re clk 0 
+
+
+.latch n265 $auto$simplemap.cc:240:simplemap_eqne$1406[20] re clk 0 
+
+
+.latch n270 $auto$simplemap.cc:240:simplemap_eqne$1406[21] re clk 0 
+
+
+.latch n275 $auto$simplemap.cc:240:simplemap_eqne$1406[22] re clk 0 
+
+
+.latch n280 $auto$simplemap.cc:240:simplemap_eqne$1406[23] re clk 0 
+
+
+.latch n285 $add~54^lAND~51 re clk 0 
+
+
+.latch n290 $auto$simplemap.cc:240:simplemap_eqne$1587[1] re clk 0 
+
+
+.latch n295 $auto$simplemap.cc:240:simplemap_eqne$1587[2] re clk 0 
+
+
+.latch n300 $sdffe~55^Q~3 re clk 0 
+
+
+
+
+
+
+.names $auto$simplemap.cc:240:simplemap_eqne$997[0] $auto$simplemap.cc:240:simplemap_eqne$1278[1] anode~0 
+00 0 
+
+
+.names $auto$simplemap.cc:240:simplemap_eqne$997[0] $auto$simplemap.cc:240:simplemap_eqne$1278[1] segment~7 
+01 0 
+
+
+.names new_n193 new_n192 new_n194 new_n195_1 segment~6 
+-110 1 
+1101 1 
+0011 1 
+
+
+.names $auto$simplemap.cc:240:simplemap_eqne$467[1] $auto$simplemap.cc:240:simplemap_eqne$1587[1] \
+ $auto$simplemap.cc:240:simplemap_eqne$1568[1] $auto$simplemap.cc:240:simplemap_eqne$1299[1] \
+ $auto$simplemap.cc:240:simplemap_eqne$997[0] $auto$simplemap.cc:240:simplemap_eqne$1278[1] new_n192 
+0---00 1 
+--0-10 1 
+-0--01 1 
+---011 1 
+
+
+.names $add~44^lAND~35 $add~54^lAND~51 $add~49^lAND~43 $add~59^lAND~59 $auto$simplemap.cc:240:simplemap_eqne$997[0] \
+ $auto$simplemap.cc:240:simplemap_eqne$1278[1] new_n193 
+0---00 1 
+--0-10 1 
+-0--01 1 
+---011 1 
+
+
+.names $sdffe~45^Q~3 $sdffe~55^Q~3 $sdffe~50^Q~3 $auto$simplemap.cc:240:simplemap_eqne$1299[3] \
+ $auto$simplemap.cc:240:simplemap_eqne$997[0] $auto$simplemap.cc:240:simplemap_eqne$1278[1] new_n194 
+0---00 1 
+--0-10 1 
+-0--01 1 
+---011 1 
+
+
+.names $auto$simplemap.cc:240:simplemap_eqne$467[2] $auto$simplemap.cc:240:simplemap_eqne$1587[2] \
+ $auto$simplemap.cc:240:simplemap_eqne$1568[2] $sdffe~60^Q~2 $auto$simplemap.cc:240:simplemap_eqne$997[0] \
+ $auto$simplemap.cc:240:simplemap_eqne$1278[1] new_n195_1 
+1---00 1 
+--1-10 1 
+-1--01 1 
+---111 1 
+
+
+.names new_n193 new_n192 new_n195_1 new_n194 segment~5 
+0110 1 
+-001 1 
+0-01 1 
+00-1 1 
+
+
+.names new_n193 new_n194 new_n195_1 new_n192 segment~4 
+0-01 1 
+-111 1 
+01-- 1 
+
+
+.names new_n194 new_n195_1 new_n192 new_n193 segment~3 
+-100 1 
+1010 1 
+0001 1 
+1111 1 
+
+
+.names new_n192 new_n193 new_n195_1 new_n194 segment~2 
+-110 1 
+0-10 1 
+0101 1 
+
+
+.names new_n192 new_n194 new_n195_1 new_n193 segment~1 
+1110 1 
+00-0 1 
+-011 1 
+0-11 1 
+
+
+.names new_n193 new_n194 new_n195_1 new_n192 segment~0 
+0000 1 
+0101 1 
+0011 1 
+1111 1 
+
+
+.names $auto$simplemap.cc:240:simplemap_eqne$997[0] $auto$simplemap.cc:240:simplemap_eqne$1278[1] anode~3 
+11 0 
+
+
+.names $auto$simplemap.cc:240:simplemap_eqne$1278[1] $auto$simplemap.cc:240:simplemap_eqne$997[0] anode~1 
+01 0 
+
+
+.names btnc $add~0^lAND~1 n20 
+00 1 
+
+
+.names btnc $add~0^lAND~1 $sdff~1^Q~1 n25 
+010 1 
+001 1 
+
+
+.names $add~0^lAND~1 $sdff~1^Q~1 btnc $sdff~1^Q~2 n30 
+1100 1 
+-001 1 
+0-01 1 
+
+
+.names $add~0^lAND~1 $sdff~1^Q~1 $sdff~1^Q~2 btnc $sdff~1^Q~3 n35 
+11100 1 
+--001 1 
+-0-01 1 
+0--01 1 
+
+
+.names $add~0^lAND~1 $sdff~1^Q~1 $sdff~1^Q~2 $sdff~1^Q~3 btnc $sdff~1^Q~4 n40 
+111100 1 
+---001 1 
+--0-01 1 
+-0--01 1 
+0---01 1 
+
+
+.names btnc new_n210_1 $sdff~1^Q~5 n45 
+010 1 
+001 1 
+
+
+.names $add~0^lAND~1 $sdff~1^Q~1 $sdff~1^Q~2 $sdff~1^Q~3 $sdff~1^Q~4 new_n210_1 
+11111 1 
+
+
+.names btnc new_n212 $sdff~1^Q~6 n50 
+010 1 
+001 1 
+
+
+.names $add~0^lAND~1 $sdff~1^Q~1 $sdff~1^Q~2 $sdff~1^Q~3 $sdff~1^Q~4 $sdff~1^Q~5 new_n212 
+111111 1 
+
+
+.names new_n212 $sdff~1^Q~6 btnc $sdff~1^Q~7 n55 
+1100 1 
+-001 1 
+0-01 1 
+
+
+.names new_n212 $sdff~1^Q~6 $sdff~1^Q~7 btnc $sdff~1^Q~8 n60 
+11100 1 
+--001 1 
+-0-01 1 
+0--01 1 
+
+
+.names new_n212 $sdff~1^Q~6 $sdff~1^Q~7 $sdff~1^Q~8 btnc $sdff~1^Q~9 n65 
+111100 1 
+---001 1 
+--0-01 1 
+-0--01 1 
+0---01 1 
+
+
+.names btnc new_n217 $sdff~1^Q~10 n70 
+010 1 
+001 1 
+
+
+.names new_n212 $sdff~1^Q~6 $sdff~1^Q~7 $sdff~1^Q~8 $sdff~1^Q~9 new_n217 
+11111 1 
+
+
+.names btnc new_n219 $sdff~1^Q~11 n75 
+010 1 
+001 1 
+
+
+.names new_n212 $sdff~1^Q~6 $sdff~1^Q~7 $sdff~1^Q~8 $sdff~1^Q~9 $sdff~1^Q~10 new_n219 
+111111 1 
+
+
+.names new_n219 $sdff~1^Q~11 btnc $sdff~1^Q~12 n80 
+1100 1 
+-001 1 
+0-01 1 
+
+
+.names new_n219 $sdff~1^Q~11 $sdff~1^Q~12 btnc $sdff~1^Q~13 n85 
+11100 1 
+--001 1 
+-0-01 1 
+0--01 1 
+
+
+.names new_n219 $sdff~1^Q~11 $sdff~1^Q~12 $sdff~1^Q~13 btnc $sdff~1^Q~14 n90 
+111100 1 
+---001 1 
+--0-01 1 
+-0--01 1 
+0---01 1 
+
+
+.names btnc new_n224 $auto$simplemap.cc:240:simplemap_eqne$997[0] n95 
+010 1 
+001 1 
+
+
+.names new_n219 $sdff~1^Q~11 $sdff~1^Q~12 $sdff~1^Q~13 $sdff~1^Q~14 new_n224 
+11111 1 
+
+
+.names btnc new_n226_1 $auto$simplemap.cc:240:simplemap_eqne$1278[1] n100 
+010 1 
+001 1 
+
+
+.names new_n219 $sdff~1^Q~11 $sdff~1^Q~12 $sdff~1^Q~13 $sdff~1^Q~14 $auto$simplemap.cc:240:simplemap_eqne$997[0] new_n226_1 
+111111 1 
+
+
+.names new_n228 new_n234 btnc $add~49^lAND~43 n105 
+1100 1 
+-001 1 
+0-01 1 
+
+
+.names new_n229 new_n230_1 new_n231_1 new_n232 new_n233 $add~44^lAND~35 new_n228 
+111111 1 
+
+
+.names $add~64^lAND~67 $sdffe~65^Q~1 $sdffe~65^Q~2 $sdffe~65^Q~3 $sdffe~65^Q~4 $sdffe~65^Q~5 new_n229 
+111111 1 
+
+
+.names $auto$simplemap.cc:240:simplemap_eqne$1406[21] $auto$simplemap.cc:240:simplemap_eqne$1406[22] \
+ $auto$simplemap.cc:240:simplemap_eqne$1406[23] new_n230_1 
+000 1 
+
+
+.names $auto$simplemap.cc:240:simplemap_eqne$1406[8] $auto$simplemap.cc:240:simplemap_eqne$1406[10] \
+ $auto$simplemap.cc:240:simplemap_eqne$1406[11] $auto$simplemap.cc:240:simplemap_eqne$1406[12] $sdffe~65^Q~9 sw new_n231_1 
+000011 1 
+
+
+.names $auto$simplemap.cc:240:simplemap_eqne$1406[13] $auto$simplemap.cc:240:simplemap_eqne$1406[15] $sdffe~65^Q~14 \
+ $sdffe~65^Q~16 new_n232 
+0011 1 
+
+
+.names $auto$simplemap.cc:240:simplemap_eqne$1406[6] $auto$simplemap.cc:240:simplemap_eqne$1406[7] \
+ $auto$simplemap.cc:240:simplemap_eqne$1406[20] $sdffe~65^Q~18 $sdffe~65^Q~19 $sdffe~65^Q~17 new_n233 
+000111 1 
+
+
+.names $auto$simplemap.cc:240:simplemap_eqne$467[1] $auto$simplemap.cc:240:simplemap_eqne$467[2] $sdffe~45^Q~3 new_n234 
+001 1 
+
+
+.names new_n236_1 $auto$simplemap.cc:240:simplemap_eqne$1568[1] new_n237 n110 
+101 1 
+011 1 
+
+
+.names new_n228 new_n234 $add~49^lAND~43 new_n236_1 
+111 1 
+
+
+.names new_n234 new_n238 new_n228 $add~49^lAND~43 btnc new_n237 
+----1 0 
+1111- 0 
+
+
+.names $auto$simplemap.cc:240:simplemap_eqne$1568[1] $auto$simplemap.cc:240:simplemap_eqne$1568[2] $sdffe~50^Q~3 new_n238 
+001 1 
+
+
+.names new_n236_1 $auto$simplemap.cc:240:simplemap_eqne$1568[1] btnc $auto$simplemap.cc:240:simplemap_eqne$1568[2] n115 
+1100 1 
+-001 1 
+0-01 1 
+
+
+.names new_n236_1 $auto$simplemap.cc:240:simplemap_eqne$1568[1] $auto$simplemap.cc:240:simplemap_eqne$1568[2] $sdffe~50^Q~3 \
+ new_n237 n120 
+11101 1 
+--011 1 
+-0-11 1 
+0--11 1 
+
+
+.names btnc new_n242 $add~44^lAND~35 n125 
+010 1 
+001 1 
+
+
+.names new_n229 new_n230_1 new_n231_1 new_n232 new_n233 new_n242 
+11111 1 
+
+
+.names new_n234 btnc $auto$simplemap.cc:240:simplemap_eqne$467[1] new_n228 n130 
+-010 1 
+0001 1 
+
+
+.names new_n228 $auto$simplemap.cc:240:simplemap_eqne$467[1] btnc $auto$simplemap.cc:240:simplemap_eqne$467[2] n135 
+1100 1 
+-001 1 
+0-01 1 
+
+
+.names new_n228 $auto$simplemap.cc:240:simplemap_eqne$467[1] $auto$simplemap.cc:240:simplemap_eqne$467[2] btnc $sdffe~45^Q~3 \
+ n140 
+11100 1 
+-1001 1 
+-0101 1 
+0--01 1 
+
+
+.names btnc new_n247 $add~59^lAND~59 n145 
+010 1 
+001 1 
+
+
+.names new_n228 new_n234 new_n238 new_n248 $add~49^lAND~43 $add~54^lAND~51 new_n247 
+111111 1 
+
+
+.names $auto$simplemap.cc:240:simplemap_eqne$1587[1] $auto$simplemap.cc:240:simplemap_eqne$1587[2] $sdffe~55^Q~3 new_n248 
+001 1 
+
+
+.names $auto$simplemap.cc:240:simplemap_eqne$1299[3] $sdffe~60^Q~2 new_n247 $add~59^lAND~59 btnc \
+ $auto$simplemap.cc:240:simplemap_eqne$1299[1] n150 
+-01100 1 
+1-1100 1 
+---001 1 
+--0-01 1 
+
+
+.names $auto$simplemap.cc:240:simplemap_eqne$1299[3] new_n247 $add~59^lAND~59 $auto$simplemap.cc:240:simplemap_eqne$1299[1] \
+ btnc $sdffe~60^Q~2 n155 
+-11100 1 
+1--001 1 
+--0-01 1 
+-0--01 1 
+
+
+.names new_n247 $add~59^lAND~59 $auto$simplemap.cc:240:simplemap_eqne$1299[1] $sdffe~60^Q~2 btnc \
+ $auto$simplemap.cc:240:simplemap_eqne$1299[3] n160 
+111100 1 
+---001 1 
+--0-01 1 
+-0--01 1 
+0---01 1 
+
+
+.names btnc sw $add~64^lAND~67 n165 
+010 1 
+001 1 
+
+
+.names sw $add~64^lAND~67 btnc $sdffe~65^Q~1 n170 
+1100 1 
+-001 1 
+0-01 1 
+
+
+.names sw $add~64^lAND~67 $sdffe~65^Q~1 btnc $sdffe~65^Q~2 n175 
+11100 1 
+--001 1 
+-0-01 1 
+0--01 1 
+
+
+.names sw $add~64^lAND~67 $sdffe~65^Q~1 $sdffe~65^Q~2 btnc $sdffe~65^Q~3 n180 
+111100 1 
+---001 1 
+--0-01 1 
+-0--01 1 
+0---01 1 
+
+
+.names btnc new_n257 $sdffe~65^Q~4 n185 
+010 1 
+001 1 
+
+
+.names sw $add~64^lAND~67 $sdffe~65^Q~1 $sdffe~65^Q~2 $sdffe~65^Q~3 new_n257 
+11111 1 
+
+
+.names new_n257 $sdffe~65^Q~4 btnc $sdffe~65^Q~5 n190 
+1100 1 
+-001 1 
+0-01 1 
+
+
+.names new_n229 sw $auto$simplemap.cc:240:simplemap_eqne$1406[6] new_n260_1 n195 
+1101 1 
+-011 1 
+0-11 1 
+
+
+.names new_n242 btnc new_n260_1 
+00 1 
+
+
+.names new_n229 sw $auto$simplemap.cc:240:simplemap_eqne$1406[6] btnc $auto$simplemap.cc:240:simplemap_eqne$1406[7] n200 
+11100 1 
+--001 1 
+-0-01 1 
+0--01 1 
+
+
+.names btnc new_n263 $auto$simplemap.cc:240:simplemap_eqne$1406[8] n205 
+010 1 
+001 1 
+
+
+.names new_n229 sw $auto$simplemap.cc:240:simplemap_eqne$1406[6] $auto$simplemap.cc:240:simplemap_eqne$1406[7] new_n263 
+1111 1 
+
+
+.names new_n263 $auto$simplemap.cc:240:simplemap_eqne$1406[8] $sdffe~65^Q~9 new_n260_1 n210 
+1101 1 
+-011 1 
+0-11 1 
+
+
+.names new_n263 $auto$simplemap.cc:240:simplemap_eqne$1406[8] $sdffe~65^Q~9 btnc \
+ $auto$simplemap.cc:240:simplemap_eqne$1406[10] n215 
+11100 1 
+--001 1 
+-0-01 1 
+0--01 1 
+
+
+.names new_n263 $auto$simplemap.cc:240:simplemap_eqne$1406[8] $sdffe~65^Q~9 $auto$simplemap.cc:240:simplemap_eqne$1406[10] \
+ btnc $auto$simplemap.cc:240:simplemap_eqne$1406[11] n220 
+111100 1 
+---001 1 
+--0-01 1 
+-0--01 1 
+0---01 1 
+
+
+.names new_n263 new_n268 btnc $auto$simplemap.cc:240:simplemap_eqne$1406[12] n225 
+1100 1 
+-001 1 
+0-01 1 
+
+
+.names $auto$simplemap.cc:240:simplemap_eqne$1406[8] $sdffe~65^Q~9 $auto$simplemap.cc:240:simplemap_eqne$1406[10] \
+ $auto$simplemap.cc:240:simplemap_eqne$1406[11] new_n268 
+1111 1 
+
+
+.names new_n270_1 new_n229 sw btnc $auto$simplemap.cc:240:simplemap_eqne$1406[13] n230 
+11100 1 
+--001 1 
+-0-01 1 
+0--01 1 
+
+
+.names new_n271_1 new_n272 new_n270_1 
+11 1 
+
+
+.names $auto$simplemap.cc:240:simplemap_eqne$1406[6] $auto$simplemap.cc:240:simplemap_eqne$1406[7] new_n271_1 
+11 1 
+
+
+.names $auto$simplemap.cc:240:simplemap_eqne$1406[8] $sdffe~65^Q~9 $auto$simplemap.cc:240:simplemap_eqne$1406[10] \
+ $auto$simplemap.cc:240:simplemap_eqne$1406[11] $auto$simplemap.cc:240:simplemap_eqne$1406[12] new_n272 
+11111 1 
+
+
+.names new_n270_1 new_n229 sw $auto$simplemap.cc:240:simplemap_eqne$1406[13] $sdffe~65^Q~14 new_n260_1 n235 
+111101 1 
+---011 1 
+--0-11 1 
+-0--11 1 
+0---11 1 
+
+
+.names btnc new_n275_1 $auto$simplemap.cc:240:simplemap_eqne$1406[15] n240 
+010 1 
+001 1 
+
+
+.names new_n229 new_n276_1 $auto$simplemap.cc:240:simplemap_eqne$1406[7] $auto$simplemap.cc:240:simplemap_eqne$1406[10] \
+ $auto$simplemap.cc:240:simplemap_eqne$1406[13] $sdffe~65^Q~14 new_n275_1 
+111111 1 
+
+
+.names sw $auto$simplemap.cc:240:simplemap_eqne$1406[6] $auto$simplemap.cc:240:simplemap_eqne$1406[8] $sdffe~65^Q~9 \
+ $auto$simplemap.cc:240:simplemap_eqne$1406[11] $auto$simplemap.cc:240:simplemap_eqne$1406[12] new_n276_1 
+111111 1 
+
+
+.names new_n275_1 $auto$simplemap.cc:240:simplemap_eqne$1406[15] $sdffe~65^Q~16 new_n260_1 n245 
+1101 1 
+-011 1 
+0-11 1 
+
+
+.names new_n275_1 $auto$simplemap.cc:240:simplemap_eqne$1406[15] $sdffe~65^Q~16 $sdffe~65^Q~17 new_n260_1 n250 
+11101 1 
+--011 1 
+-0-11 1 
+0--11 1 
+
+
+.names new_n280_1 $sdffe~65^Q~18 new_n260_1 n255 
+101 1 
+011 1 
+
+
+.names new_n275_1 $auto$simplemap.cc:240:simplemap_eqne$1406[15] $sdffe~65^Q~16 $sdffe~65^Q~17 new_n280_1 
+1111 1 
+
+
+.names new_n280_1 $sdffe~65^Q~18 $sdffe~65^Q~19 new_n260_1 n260 
+1101 1 
+-011 1 
+0-11 1 
+
+
+.names btnc new_n283 $auto$simplemap.cc:240:simplemap_eqne$1406[20] n265 
+010 1 
+001 1 
+
+
+.names $auto$simplemap.cc:240:simplemap_eqne$1406[15] $sdffe~65^Q~16 $sdffe~65^Q~17 $sdffe~65^Q~18 $sdffe~65^Q~19 new_n275_1 \
+ new_n283 
+111111 1 
+
+
+.names new_n283 $auto$simplemap.cc:240:simplemap_eqne$1406[20] btnc $auto$simplemap.cc:240:simplemap_eqne$1406[21] n270 
+1100 1 
+-001 1 
+0-01 1 
+
+
+.names new_n283 $auto$simplemap.cc:240:simplemap_eqne$1406[20] $auto$simplemap.cc:240:simplemap_eqne$1406[21] btnc \
+ $auto$simplemap.cc:240:simplemap_eqne$1406[22] n275 
+11100 1 
+--001 1 
+-0-01 1 
+0--01 1 
+
+
+.names new_n283 $auto$simplemap.cc:240:simplemap_eqne$1406[20] $auto$simplemap.cc:240:simplemap_eqne$1406[21] \
+ $auto$simplemap.cc:240:simplemap_eqne$1406[22] btnc $auto$simplemap.cc:240:simplemap_eqne$1406[23] n280 
+111100 1 
+---001 1 
+--0-01 1 
+-0--01 1 
+0---01 1 
+
+
+.names new_n238 new_n236_1 $add~54^lAND~51 btnc n285 
+1100 1 
+-010 1 
+0-10 1 
+
+
+.names new_n228 new_n234 new_n238 $add~49^lAND~43 $add~54^lAND~51 new_n289 
+11111 1 
+
+
+.names new_n247 btnc new_n289 $auto$simplemap.cc:240:simplemap_eqne$1587[1] n290 
+0010 1 
+0001 1 
+
+
+.names new_n289 $auto$simplemap.cc:240:simplemap_eqne$1587[1] btnc $auto$simplemap.cc:240:simplemap_eqne$1587[2] n295 
+1100 1 
+-001 1 
+0-01 1 
+
+
+.names new_n289 $auto$simplemap.cc:240:simplemap_eqne$1587[1] $auto$simplemap.cc:240:simplemap_eqne$1587[2] btnc \
+ $sdffe~55^Q~3 n300 
+11100 1 
+-1001 1 
+-0101 1 
+0--01 1 
+
+
+.names segment~7 anode~2 
+1 1 
+
+
+
+.end 
+
+
+
+

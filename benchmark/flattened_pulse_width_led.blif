@@ -1,0 +1,263 @@
+# Benchmark "top" written by ABC on Wed Mar 19 09:33:25 2025 
+
+
+.model top 
+
+
+.inputs sw~1 btn~2 sw~3 sw~2 btn~3 btn~1 btn~0 clk sw~0 
+
+
+.outputs pulse_green pulse_blue pulse_red 
+
+
+
+.latch li00 lo00 re clk 0 
+
+
+.latch li01 lo01 re clk 0 
+
+
+.latch n31 $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[0] re clk 0 
+
+
+.latch n36 $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[1] re clk 0 
+
+
+.latch n41 $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[2] re clk 0 
+
+
+.latch n46 $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[3] re clk 0 
+
+
+.latch n51 $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[4] re clk 0 
+
+
+.latch n56 $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[5] re clk 0 
+
+
+.latch n61 $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[6] re clk 0 
+
+
+.latch n66 $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[7] re clk 0 
+
+
+.latch n71 $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[8] re clk 0 
+
+
+.latch n76 $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[9] re clk 0 
+
+
+.latch n81 $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[10] re clk 0 
+
+
+.latch n86 $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[11] re clk 0 
+
+
+.latch n91 $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[12] re clk 0 
+
+
+.latch n96 $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[13] re clk 0 
+
+
+.latch li16 lo16 re clk 0 
+
+
+
+
+
+
+.names btn~1 $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[12] \
+ $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[11] btn~0 \
+ $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[13] li00 
+-0010 1 
+1-010 1 
+10--0 1 
+
+
+.names new_n68 sw~3 $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[12] \
+ $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[11] sw~2 \
+ $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[13] li01 
+--0010 1 
+-1-010 1 
+-10--0 1 
+1-0-10 1 
+1-00-0 1 
+11--10 1 
+11-0-0 1 
+
+
+.names $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[10] sw~1 new_n68 
+01 1 
+
+
+.names $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[0] \
+ $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[1] n36 
+01 1 
+10 1 
+
+
+.names $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[0] \
+ $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[1] \
+ $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[2] n41 
+-01 1 
+0-1 1 
+110 1 
+
+
+.names $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[0] \
+ $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[1] \
+ $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[2] \
+ $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[3] n46 
+--01 1 
+-0-1 1 
+0--1 1 
+1110 1 
+
+
+.names $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[0] \
+ $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[1] \
+ $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[2] \
+ $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[3] \
+ $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[4] n51 
+---01 1 
+--0-1 1 
+-0--1 1 
+0---1 1 
+11110 1 
+
+
+.names $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[0] \
+ $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[1] \
+ $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[2] \
+ $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[3] \
+ $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[4] \
+ $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[5] n56 
+----01 1 
+---0-1 1 
+--0--1 1 
+-0---1 1 
+0----1 1 
+111110 1 
+
+
+.names new_n75 $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[6] n61 
+01 1 
+10 1 
+
+
+.names $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[0] \
+ $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[1] \
+ $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[2] \
+ $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[3] \
+ $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[4] \
+ $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[5] new_n75 
+111111 1 
+
+
+.names new_n75 $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[6] \
+ $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[7] n66 
+-01 1 
+0-1 1 
+110 1 
+
+
+.names new_n75 $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[6] \
+ $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[7] \
+ $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[8] n71 
+--01 1 
+-0-1 1 
+0--1 1 
+1110 1 
+
+
+.names new_n75 $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[6] \
+ $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[7] \
+ $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[8] \
+ $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[9] n76 
+---01 1 
+--0-1 1 
+-0--1 1 
+0---1 1 
+11110 1 
+
+
+.names new_n75 $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[6] \
+ $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[7] \
+ $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[8] \
+ $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[9] \
+ $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[10] n81 
+----01 1 
+---0-1 1 
+--0--1 1 
+-0---1 1 
+0----1 1 
+111110 1 
+
+
+.names new_n81_1 $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[11] n86 
+01 1 
+10 1 
+
+
+.names new_n75 $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[6] \
+ $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[7] \
+ $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[8] \
+ $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[9] \
+ $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[10] new_n81_1 
+111111 1 
+
+
+.names new_n81_1 $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[11] \
+ $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[12] n91 
+-01 1 
+0-1 1 
+110 1 
+
+
+.names new_n81_1 $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[11] \
+ $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[12] \
+ $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[13] n96 
+--01 1 
+-0-1 1 
+0--1 1 
+1110 1 
+
+
+.names new_n85 sw~0 $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[12] \
+ $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[11] btn~3 \
+ $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[13] li16 
+--0010 1 
+-1-010 1 
+-10--0 1 
+1-0-10 1 
+1-00-0 1 
+11--10 1 
+11-0-0 1 
+
+
+.names $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[10] btn~2 new_n85 
+01 1 
+
+
+.names $techmap$auto$hard_block.cc:122:cell_hard_block$67.$auto$alumacc.cc:485:replace_alu$235.B[0] n31 
+0 1 
+
+
+.names lo00 pulse_green 
+1 1 
+
+
+.names lo16 pulse_blue 
+1 1 
+
+
+.names lo01 pulse_red 
+1 1 
+
+
+
+.end 
+
+
+
+
