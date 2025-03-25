@@ -1,17 +1,20 @@
 #include <set>
-#include "Graph.h"
 #include <cstdlib>
 #include <iostream>
 #include <fstream>
 #include <sstream>
+#include "evaluate.h"
 
 using namespace std;
+
+#define BIPARTITION_RATIO 0.02
 
 int calculate_cut(Graph graph, set<int> X, set<int> Y) {
     int size_X = X.size();
     int size_Y = Y.size();
     int size = size_X + size_Y;
-    if(!(((size_X * 1.0 / size >= 0.48) && (size_X * 1.0 / size <= 0.52)) && ((size_Y * 1.0 / size >= 0.48) && (size_Y * 1.0 / size <= 0.52)))) {
+    if(!(((size_X * 1.0 / size >= 0.5-BIPARTITION_RATIO) && (size_X * 1.0 / size <= 0.5+BIPARTITION_RATIO)) \
+        && ((size_Y * 1.0 / size >= 0.5-BIPARTITION_RATIO) && (size_Y * 1.0 / size <= 0.5+BIPARTITION_RATIO)))) {
         cerr << "The size of partition X and Y doesn't satisfy the requirement!" << endl;
         return -1;
     }
