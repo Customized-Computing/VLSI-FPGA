@@ -56,7 +56,7 @@
 
 如果我们把以上信息画成图，我们可以得到以下的结果：
 
-<img width=400 alt="1" src="/lab1/./img/topo-MFS1.png" style="margin: auto; display: flex;">
+<img width=400 alt="1" src="/VLSI-FPGA/lab1/./img/topo-MFS1.png" style="margin: auto; display: flex;">
 
 #### 网表相关信息
 
@@ -92,7 +92,7 @@
 
 以`MSF1`的拓朴图为例。假设元件0和元件1相连、元件2和元件3相连。且划分算法把他们按照以下示例图所示的位置进行划分。
 
-<img width=400 alt="1" src="/lab1/./img/topo-MFS1-error.png" style="margin: auto; display: flex;">
+<img width=400 alt="1" src="/VLSI-FPGA/lab1/./img/topo-MFS1-error.png" style="margin: auto; display: flex;">
 
 此时元件1和元件0被划分到节点0和节点4，而节点1和4之间存在直接连接的关系，我们称元件0和元件1是满足拓扑约束的。<br>
 相反，元件2和元件3被划分到节点0和节点5，而节点0和5之间不存在直接连接的关系，我们称元件2和元件3是不满足拓扑约束的。
