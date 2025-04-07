@@ -2,9 +2,10 @@
 #ifndef OBJECT_H
 #define OBJECT_H
 
-#define INT_MAX 0x3f3f3f3f
+#define MAX_INT 0x3f3f3f3f
 
 #include <set>
+#include <iostream>
 
 class Net;
 
@@ -35,6 +36,10 @@ public:
     // 设置元件的坐标点
     void setPosition(int i_x, int i_y)
     {
+        if (this->isFixed()){
+            std::cout << "[WARNING] inst " << this->Inst_id << " is fixed, can not move." << std::endl;
+            return;
+        }
         this->x = i_x;
         this->y = i_y;
     }
@@ -42,7 +47,7 @@ public:
     std::pair<int, int> getPosition() { return std::pair<int, int>(this->x, this->y); }
     // 设置 inst 的 id
     void setInstId(int i_inst_id) { this->Inst_id = i_inst_id; }
-    // 或者 inst 的 id
+    // 获得 inst 的 id
     int getInstId() { return this->Inst_id; }
 };
 

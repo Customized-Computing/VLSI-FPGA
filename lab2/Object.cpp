@@ -10,7 +10,7 @@ Instance::Instance(int i_x, int i_y, int i_inst_id, bool i_fixed){
 
 int Net::evalHPWL(){
     int result = 0;
-    int l_min_x = INT_MAX, l_min_y = INT_MAX, l_max_x = -INT_MAX, l_max_y = -INT_MAX;
+    int l_min_x = MAX_INT, l_min_y = MAX_INT, l_max_x = -MAX_INT, l_max_y = -MAX_INT;
     for (auto l_inst : this->connect_inst){
         std::pair<int, int> lo_pos = l_inst->getPosition();
         l_min_x = std::min(l_min_x, lo_pos.first);

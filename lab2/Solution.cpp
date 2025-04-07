@@ -96,7 +96,7 @@ int outputSolution(std::string i_file_name){
         std::pair<int, int> pos = inst->getPosition();
         f << std::setw(5) << std::left << inst->getInstId() \
             << std::setw(5) << std::left << pos.first \
-            << std::setw(5) << std::left<< pos.second << std::endl;
+            << std::setw(5) << std::left << pos.second << std::endl;
     }
     f.close();
     return 0;

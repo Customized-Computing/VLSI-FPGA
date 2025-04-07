@@ -58,10 +58,20 @@ bool FPGA::addInst(int i_x, int i_y, Instance* i_inst){
 void FPGA::reportFPGA(){
     std::printf("FPGA size is (%d, %d)\n", this->size_x, this->size_y);
     std::printf("Block usage map: \n");
+    std::cout << "    |";
+    for (int i = 0; i < this->size_y; i++){
+        std::cout << "y" << std::setw(3) << std::left << i;
+    }
+    std::cout << std::endl << "------";
+    for (int i = 0; i < this->size_y; i++){
+        std::cout << "----";
+    }
+    std::cout << std::endl;
     for (int i = 0; i < this->size_x; i++){
+        std::cout << "x" << std::setw(3) << std::left << i << "|";
         for (int j = 0; j < this->size_y; j++){
             Block* lo_block = this->getBlock(i, j);
-            std::cout << std::setw(4) << std::left << lo_block->getInstsCount();
+            std::cout << std::setw(4) << std::right << lo_block->getInstsCount();
         }
         std::cout << std::endl;
     }

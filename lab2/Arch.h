@@ -19,6 +19,7 @@ public:
     bool clearInst();
     // 获得当前 Block 存放的 inst 对象集合
     std::vector<Instance *> getInsts() { return this->contain; }
+    // 获得当前 Block 中存放的 inst 对象数量
     int getInstsCount() { return (int)this->contain.size(); }
 };
 
