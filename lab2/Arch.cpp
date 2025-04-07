@@ -55,6 +55,14 @@ bool FPGA::addInst(int i_x, int i_y, Instance* i_inst){
     return true;
 }
 
+Block* FPGA::getBlock(int i_x, int i_y){
+    if (i_x < 0 || i_x >= this->size_x || i_y < 0 || i_y >= this->size_y){
+        std::printf("[WARNING] block (%d, %d) is out of FPGA\n", i_x, i_y);
+        return nullptr;
+    }
+    return this->fpga_blocks[i_x][i_y];
+}
+
 void FPGA::reportFPGA(){
     std::printf("FPGA size is (%d, %d)\n", this->size_x, this->size_y);
     std::printf("Block usage map: \n");

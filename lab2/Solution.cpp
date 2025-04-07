@@ -92,11 +92,11 @@ int outputSolution(std::string i_file_name){
         return -1;
     }
     for (size_t i = 0; i < glb_inst_map.size(); i++){
-        Instance* inst = glb_inst_map[i];
-        std::pair<int, int> pos = inst->getPosition();
-        f << std::setw(5) << std::left << inst->getInstId() \
-            << std::setw(5) << std::left << pos.first \
-            << std::setw(5) << std::left << pos.second << std::endl;
+        Instance* lo_inst_p = glb_inst_map[i];
+        std::pair<int, int> lo_pos = lo_inst_p->getPosition();
+        f << std::setw(5) << std::left << lo_inst_p->getInstId() \
+            << std::setw(5) << std::left << lo_pos.first \
+            << std::setw(5) << std::left << lo_pos.second << std::endl;
     }
     f.close();
     return 0;
@@ -109,4 +109,44 @@ int reportWireLength(){
     }
     std::cout << "Wirelength: " << std::setw(5) << std::right << l_wirelength << std::endl;
     return l_wirelength;
+}
+
+int reportValid(){
+    // 检查布局是否合法
+    // 1. 检查每个inst的布局位置是否和Block包含的inst一致
+    // 2. 检查每个Block是否存在inst重复出现的情况
+
+    int l_error_count = 0;
+    // 先检查每个inst的布局位置是否和Block包含的inst一致
+    for (auto lo_inst : glb_inst_map){
+        Instance* lo_inst_p = lo_inst.second;
+        std::pair<int, int> lo_inst_pos = lo_inst_p->getPosition();
+        Block* lo_block_p = glb_fpga.getBlock(lo_inst_pos.first, lo_inst_pos.second);
+        if (lo_block_p == nullptr){
+            std::printf("[ERROR] inst %d is not placed (%d, %d)\n", lo_inst_p->getInstId(), lo_inst_pos.first, lo_inst_pos.second);
+            l_error_count++;
+            continue;
+        }
+        if (lo_block_p->getInsts()[0] != lo_inst_p){
+            std::printf("[ERROR] inst %d is not in block (%d, %d)\n", lo_inst_p->getInstId(), lo_inst_pos.first, lo_inst_pos.second);
+            l_error_count++;
+        }
+    }
+    // 再从block一侧检查是否存在inst重复出现的情况
+    std::set<Instance*> lo_inst_attend;
+    for (int i = 0; i < glb_fpga.getSizeX(); i++){
+        for (int j = 0; j < glb_fpga.getSizeY(); j++){
+            Block* lo_block_p = glb_fpga.getBlock(i, j);
+            if (lo_block_p == nullptr)
+                continue;
+            for (auto lo_inst : lo_block_p->getInsts()){
+                if (lo_inst_attend.find(lo_inst) != lo_inst_attend.end()){
+                    std::printf("[ERROR] inst %d is repeated in block (%d, %d)\n", lo_inst->getInstId(), i, j);
+                    l_error_count++; 
+                } 
+                lo_inst_attend.insert(lo_inst);
+            }
+        } 
+    }
+    return l_error_count;
 }

@@ -41,12 +41,15 @@ public:
     void initialize();
     // 设定芯片的规模
     void setSize(int i_size_x, int i_size_y);
+    // 获得芯片规模
+    int getSizeX() { return this->size_x; }
+    int getSizeY() { return this->size_y; }
     // 向指定位置添加 inst 对象
     bool addInst(int i_x, int i_y, Instance *i_inst);
     // 清除指定位置的 inst 对象
     void clearInst(int i_x, int i_y) { this->fpga_blocks[i_x][i_y]->clearInst(); }
     // 访问 FPGA 中特定的 Block
-    Block *getBlock(int i_x, int i_y) { return this->fpga_blocks[i_x][i_y]; }
+    Block *getBlock(int i_x, int i_y);
     // 报告芯片的基本信息
     void reportFPGA();
 };
