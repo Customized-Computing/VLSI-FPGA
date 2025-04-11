@@ -38,7 +38,7 @@
 难点：大型宏模块与小型模块的混合布局，多阶段分层处理时不能考虑到后续的优化，导致结果的局部最优。<br>
 如何让布图规划算法感知到feedthrough的存在，并进行相关优化。
 
-## LLM-in-loop实现
+## 3. LLM-in-loop实现
 
 提出一种LLM-in-loop的大模型布图规划工具，实现任务拆解、布图工具调用、布图质量分析、优化迭代等功能。<br>
 可参考文献[《Towards LLM4Floorplan: Agents Can Do What Engineers Do in Chip Design》](https://openreview.net/forum?id=n7s9EwG6hW)[《ChipNeMo: Domain-Adapted LLMs for Chip Design》](https://arxiv.org/abs/2311.00176)
