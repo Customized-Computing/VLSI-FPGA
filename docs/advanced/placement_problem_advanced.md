@@ -75,7 +75,7 @@ net net_1032 6
 endnet
 ...
 ```
-`net`关键字表明这是一条新的net数据输入，`endnet`关键字表明这是一条net输入的结束。紧随其后是netde名称以及包含多少个节点连接信息。例如`net_1031`连接4个inst，`net_1032`连接6个inst。<br>
+`net`关键字表明这是一条新的net数据输入，`endnet`关键字表明这是一条net输入的结束。紧随其后是net的名称以及包含多少个节点连接信息。例如`net_1031`连接4个inst，`net_1032`连接6个inst。<br>
 每一行都是具体的连接信息，第一个是inst的名称，第二个是inst的端口。
 
 ---
@@ -206,5 +206,5 @@ END CELL
 |---|---|---|
 | FPGA-example1 | 13562 | 248.13s |
 | FPGA-example2 | 2914068 | 427.69s |
-| FPGA-example3 |  |  |
-| FPGA-example4 |  |  |
+| FPGA-example3 | 7781857 | 367.88s |
+| FPGA-example4 | 8221614 | 511.66s |
