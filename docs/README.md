@@ -60,3 +60,7 @@
 ## Acknowledgement
 
 基本实验来自[BYU-ECEn629](https://byu-cpe.github.io/ecen629/syllabus/)，本课程对其进行了一些适应性改造。并添加了进阶实验内容。
+划分大作业来源[《TopoPart: a Multi-level Topology-Driven Partitioning Framework for Multi-FPGA Systems》](https://ieeexplore.ieee.org/document/9643481)。
+布图大作业来源[《FTAFP: A Feedthrough-Aware Floorplanner for Hierarchical  Design of Large-Scale SoCs》](https://dl.acm.org/doi/10.1145/3658617.3697728)。
+布局大作业来源[《DREAMPlaceFPGA: An Open-Source Analytical Placer for Large Scale Heterogeneous FPGAs using Deep-Learning Toolkit》](https://ieeexplore.ieee.org/document/9712562)。
+布线大作业来源[《》]()
