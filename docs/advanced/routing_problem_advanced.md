@@ -38,7 +38,7 @@
 
 PCB布线分为两个步骤：第一步芯片下的逃逸布线(escape routing)；第二步是芯片间的总线布线(bus routing)。
 
-<img width=400 alt="CAFE router" src="/advanced/img/PCB-routing-illustrate.png" style="margin:auto; display:flex;">
+<img width=400 alt="CAFE router" src="/VLSI-FPGA/advanced/img/PCB-routing-illustrate.png" style="margin:auto; display:flex;">
 
 不过在这里我们仅考虑总线布线的问题。你需要<mark>设计一个PCB布线器</mark>，读入芯片数据，输出每一对引脚之间的布线结果。
 布线器需要考虑的约束在附录章节的“总线布线约束”中有详细介绍。
@@ -182,7 +182,7 @@ PCB是多层印刷板合并得到，为了便于PCB的制造，每一层印刷�
 
 对于属于同一个总线的多个不同引脚对，它们互联时需要保证一个拓扑约束。
 * 同一个总线的每一对引脚之间互联的线段数量一致。
-* 同一个总线的每一对引脚之间经过的PCB层序列一致，例如都是$L_1,L_2,L_1,L_2$的顺序布线。
+* 同一个总线的每一对引脚之间经过的PCB层序列一致，例如都是$L_1,L_2,L_1,L_2$的顺序。
 * 同一个总线的每一对引脚之间布线方向一致，如下左图蓝色部分布线方向不一致，违反约束算布线失败。而右图部分，如果一处是T型连接，那么其他引脚布线序列上相同位置也要是T型连接。
 
 <img width=600 alt="failed-topo-routing" src="/VLSI-FPGA/advanced/img/PCB-routing-failed-bus-example.png" style="margin: auto; display: flex;">
