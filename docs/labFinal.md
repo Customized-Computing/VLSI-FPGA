@@ -3,6 +3,7 @@
 ## 大作业内容
 
 从已有的四个大作业方向(划分、布图、布局、布线)选择一个，完成其中部分或全部的要求，并写作一篇8页左右的论文作为实验报告上交。
+> 你也可以选择发在群里的比赛题目作为大作业的选题。
 
 * 论文模板为latex模板，在这个链接给出[IEEE格式论文模板-校内下载链接](http://172.18.233.211:5244/d/VLSI%E8%AF%BE%E4%BB%B6/dataset/conference-latex-template.zip?sign=DdYSLcB8FEa9w1W-OFYdcRvbNmgDwIfrpmnxwAWn6yA=:0)。
 
