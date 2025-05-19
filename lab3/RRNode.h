@@ -14,16 +14,16 @@ public:
     enum rrType { H_WIRE, V_WIRE, CB_WIRE };
     const char *rrTypeStr[3] = {"H_WIRE", "V_WIRE", "CB_WIRE"};
 
-    RRNode(rrType type, int x, int y, int idx = 0);
+    RRNode(rrType type, int x, int y, int idx);
     virtual ~RRNode();
 
 private:
     vector<RRNode *> connections;
-    Net *net;
     rrType type;
     int x;
     int y;
     int idx;
+    Net *net;
 
 public:
     void connect(RRNode &node);

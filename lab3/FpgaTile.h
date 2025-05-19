@@ -58,12 +58,12 @@ public:
     }
 
     RRNode &getVWire(int idx) {
-        assert(idx < vWires.size());
+        assert((size_t) idx < vWires.size());
         return *(vWires[idx]);
     }
 
     RRNode &getHWire(int idx) {
-        assert(idx < hWires.size());
+        assert((size_t) idx < hWires.size());
         return *(hWires[idx]);
     }
 
