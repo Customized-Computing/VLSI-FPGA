@@ -6,6 +6,7 @@
 * 实验二
   * [实验要求](/lab2/lab2_problem.md)
 * 实验三
+  * [实验要求](/lab3/lab3_problem.md)
 * 大作业
   * [大作业说明](labFinal.md)
   * [划分](/advanced/partition_problem_advanced.md)
