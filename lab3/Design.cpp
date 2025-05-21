@@ -45,7 +45,7 @@ void Design::addNet(Net &net) {     // 给design添加net
     nets.push_back(&net);
 }
 
-bool Design::verifyRouting() {      // 检查是否布线成功
+bool Design::verifyRouting() {
     // Check that each net can route successfully
     for(auto net : nets) {
         bool success = net->verifyRouting();
