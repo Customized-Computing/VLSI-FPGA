@@ -18,7 +18,7 @@
 
 ## FPGA架构说明
 
-下图描述了FPGA架构。
+下图描述简化版本的FPGA架构。
 
 每个`Logic block`共有4个引脚，其中，引脚1和2与左边相邻通道的所有轨道连接，引脚3和4与上边相邻通道的所有轨道连接，通道的轨道数即为通道的宽度W。
 
@@ -48,9 +48,51 @@
 * `RRNode.cpp/.h`：表示单个布线资源节点（导线或引脚）的类，带有指向所有连接的`RRNode`的指针。要使用`RRNode`分配一个线网进行布线，你可以调用`RRNode->setNet()`。
 * `Solution.cpp/.h`：包含一个`Router`空类，你需要在此基础上实现一个`MyRouter`类，**并实现你的布线算法**，你需要为每个线网分配相应的`RRNode`。
 
+在`Design.cpp`中以下函数`verifyRouting()`会验证每一条Net是否正确连接，通过观察`verifyRouting()`的行为可以确定你要做的事情。函数实现如下所示：
+
+```c++
+bool Net::verifyRouting() {
+    set<RRNode *> nodesReached;
+    list<RRNode *> nodesToVisit;
+
+    if(source.getNet() != this) { // 检查source引脚是否属于本Net，本质是在检查source这个RRNode类的Net*属性是否指向自己
+        cout << "**Net source " << source << " is not marked as belonging to net " << idx << endl;
+        return false;
+    }
+    else {
+        nodesToVisit.push_back(&source);
+    }
+
+    while(nodesToVisit.size()) { // 依次检查从source出发的链路
+        RRNode *node = nodesToVisit.front();
+        nodesToVisit.pop_front();
+        nodesReached.insert(node); // 把访问过的RRNode资源标记为已访问
+
+        for(auto connection : node->getConnections()) {
+            if(connection->getNet() == this && (nodesReached.find(connection) == nodesReached.end())) {
+                // 与当前node相连的RRNode必须也属于本Net
+                // && 后的代码是去掉已访问的RRNode资源
+                nodesToVisit.push_back(connection);
+            }
+        }
+    }
+
+    // 最后检查当前Net所有需要连接的引脚是否均已经连接
+    for(auto sink : sinks) {
+        if(nodesReached.find(sink) == nodesReached.end()) {
+            cout << "***Net " << idx << " with source " << source << " did not reach sink: " << *sink << endl;
+            return false;
+        }
+    }
+
+    return true;
+}
+```
+<mark>布线算法只能依次设定FPGA上RRNode资源所属的Net。</mark>RRNode之间的连接关系已经确定，不可以修改。
+
 ### 数据集
 
-下载链接：[校内链接(circuits.zip)](http://172.18.233.211:5244/d/VLSI%E8%AF%BE%E4%BB%B6/dataset/routing/circuits.zip?sign=_PReUHaMMGRJNm3A7aqg-KvFcuOpxh4_QY-SNmCw25A=:0)和[校外链接]()
+下载链接：[校内链接(circuits.zip)](http://172.18.233.211:5244/d/VLSI%E8%AF%BE%E4%BB%B6/dataset/routing/circuits.zip?sign=_PReUHaMMGRJNm3A7aqg-KvFcuOpxh4_QY-SNmCw25A=:0)和[校外链接(lab3_benchmark.zip)](https://github.com/Customized-Computing/VLSI-FPGA/releases/download/lab3/lab3_benchmark.zip)。
 
 数据集大小如下图所示：
 
