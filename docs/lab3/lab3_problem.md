@@ -109,7 +109,8 @@ bool Net::verifyRouting() {
 
 ### 程序运行方法
 
-1. 手动编译运行
+1. 手动编译运行<br>
+`./main.exe ./circuits/tiny 12`最后的12设置通道宽度，如果你的算法在当前宽度下布线失败，不妨提高通道宽度。为了放置程序运行时间过长和内存占用过高，一般不建议开比50更大的数值（如果你的算法在50宽度也搞不定，建议重新构思算法逻辑，有必要引入新的冲突布线策略）。
 
 ```bash
 g++ -std=c++17 -o main main.cpp Design.cpp FPGA.cpp FpgaTile.cpp Net.cpp RRNode.cpp Solution.cpp
