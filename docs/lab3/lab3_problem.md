@@ -88,7 +88,7 @@ bool Net::verifyRouting() {
     return true;
 }
 ```
-<mark>布线算法只能依次设定FPGA上RRNode资源所属的Net。</mark>RRNode之间的连接关系已经确定，不可以修改。
+<mark>布线算法不能改变FPGA上RRNode的连接关系，只能通过设定RRNode所属的Net来分配布线资源。</mark>允许同学们重复设置RRNode所属的net来实现拆线与重新布线。
 
 ### 数据集
 
