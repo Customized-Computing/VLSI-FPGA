@@ -13,7 +13,6 @@ RRNode::RRNode(rrType type, int x, int y, int idx): type(type), x(x), y(y), idx(
 RRNode::~RRNode(){}
 
 void RRNode::setNet(Net &net) {
-    assert(this->net == nullptr);
     this->net = &net;
 }
 
