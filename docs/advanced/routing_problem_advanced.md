@@ -47,7 +47,7 @@ PCB布线分为两个步骤：第一步芯片下的逃逸布线(escape routing)�
 
 ### 输入文件说明
 
-数据集下载连接：[校内链接](http://172.18.233.211:5244/d/VLSI%E8%AF%BE%E4%BB%B6/dataset/routing/final_case_1002.zip?sign=d7gcY4XXzwKVGbP_t63PEVgAmTJ8UbnuU-z5oyqQLJ4=:0)和[~~校外链接~~]()。
+数据集下载连接：[校内链接](http://172.18.233.211:5244/pd/VLSI/dataset/routing/final_case_1002.zip?signature=f16ac634c4efcd442793f265d8cea297ba2963fcee01869ca92cb775b166d7d9e650e25f6356cec3885d62926ca10f8f0279c49ec90ff0ba83c846d64e8c6626)和[~~校外链接~~]()。
 
 打开输入文本文件`example/example.input`，文本文件分为5个部分，第一部分是用于衡量布线结果质量的参数，本大作业用不上。
 ```txt

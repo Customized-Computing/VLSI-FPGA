@@ -60,7 +60,7 @@ for(const auto &net : nets) {
 
 ### 测试集
 
-下载连接：[校内链接](http://172.18.233.211:5244/VLSI%E8%AF%BE%E4%BB%B6/dataset)和[校外链接](https://github.com/Customized-Computing/VLSI-FPGA/releases/tag/lab1)
+下载连接：[校内链接](http://172.18.233.211:5244/VLSI/dataset/partition)和[校外链接](https://github.com/Customized-Computing/VLSI-FPGA/releases/tag/lab1)
 
 `ISPD_benchmark.zip`数据集中电路的大小如下表所示：
 

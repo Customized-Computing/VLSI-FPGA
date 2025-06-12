@@ -32,7 +32,7 @@
 
 ### 输入文件说明
 
-数据集下载链接：[校内链接](http://172.18.233.211:5244/VLSI%E8%AF%BE%E4%BB%B6/dataset/partition)和[校外链接(Google Drive)](https://drive.google.com/drive/folders/14cXR0dZA-3H5BY0BcZ6KFvDf4E1NeTon)。
+数据集下载链接：[校内链接](http://172.18.233.211:5244/pd/VLSI/dataset/partition/ICCAD2021-TopoPart-Benchmarks.zip?signature=a2f8be18da7e36bfc9873bd955a774c53a59b022f064d6bc40d6c98ffaf49945b52f7188a8e344e4f8eba7b3de3757ad986dcb9c9f376f15f71062383d096363d443cbf6e7ff28ed4639e2bdcc0a2ee6)和[校外链接(Google Drive)](https://drive.google.com/drive/folders/14cXR0dZA-3H5BY0BcZ6KFvDf4E1NeTon)。
 
 `ICCAD2021-TopoPart-Benchmarks.zip`包含三个文件，文件`FPGA Graph.zip`是划分的拓扑信息，`Generated Benchmarks.zip`和`Titan23 Benchmarks.zip`是网表相关信息。
 
