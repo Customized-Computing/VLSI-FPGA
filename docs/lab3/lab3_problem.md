@@ -92,7 +92,7 @@ bool Net::verifyRouting() {
 
 ### 数据集
 
-下载链接：[校内链接(circuits.zip)](http://172.18.233.211:5244/pd/VLSI/dataset/routing/circuits.zip?signature=f16ac634c4efcd442793f265d8cea29754b029c90b19269af36f8badf7d0bdb4c424ea443f9df6b3ac46f86c18f34faa)和[校外链接(lab3_benchmark.zip)](https://github.com/Customized-Computing/VLSI-FPGA/releases/download/lab3/lab3_benchmark.zip)。
+下载链接：[校内链接(circuits.zip)](http://172.18.233.211:5244/VLSI/VLSI%E8%AF%BE%E7%A8%8B/dataset/routing)和[校外链接(lab3_benchmark.zip)](https://github.com/Customized-Computing/VLSI-FPGA/releases/download/lab3/lab3_benchmark.zip)。
 
 数据集大小如下图所示：
 
