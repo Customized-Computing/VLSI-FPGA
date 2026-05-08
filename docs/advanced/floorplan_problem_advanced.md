@@ -84,7 +84,7 @@
 以`GSRC.zip`为例，包含HARD和SOFT两个文件夹，代表硬模块的floorplan设计和软模块的floorplan设计。
 > 同学们可以先实现硬模块的布图规划算法，然后实现软模块的布图规划。
 
-数据集下载链接：[GSRC校外链接](http://vlsicad.eecs.umich.edu/BK/GSRCbench/)和[MCNC校外链接](http://vlsicad.eecs.umich.edu/BK/MCNCbench/)。[校内链接](http://172.18.233.211:5244/VLSI%E8%AF%BE%E4%BB%B6/dataset/floorplan)。
+数据集下载链接：[GSRC校外链接](http://vlsicad.eecs.umich.edu/BK/GSRCbench/)和[MCNC校外链接](http://vlsicad.eecs.umich.edu/BK/MCNCbench/)。[校内链接](http://172.18.233.211:5244/VLSI/dataset/floorplan)。
 
 `GSRC.zip`数据集有n10，n30，n50，n100，n200，n300一共6个Benchmark。每个设计包含blocks文件，nets文件以及pl文件。<br>
 `MCNC.zip`数据集有ami33，ami49，apte，hp，xero一共5个Benchmark。每个设计包含blocks文件，nets文件以及pl文件。<br>
